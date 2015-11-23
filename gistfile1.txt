@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main (){ 
+    
+int N,saida[10000],I=0;
+while(scanf("%d", &N) != EOF) // EOF uma condição sistema operacional
+// eof 
+{
+if(N==0)    //condicão de if se for igual a 0
+saida[I]=0;
+if(N>0)
+saida[I]=1;
+I++;
+}
+for(N=0;N<I;N++){
+if(saida [N]==0){
+printf("vai ter copa!\n");}
+else{                                        
+printf("vai ter duas!\n");}
+}
+return 0;
+}
